@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+
+    <title>Contato - Barbearia Alura</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1><img class="cabecalho__imagem" src="logo.png" alt="logo"></h1>
+        <nav class="cabecalho__navegacao">
+            <ul class="cabecalho__navegacao__lista">
+                <li class="cabecalho__navegacao__lista__item"><a class="cabecalho__navegacao__lista__item__link"
+                        href="index.html">Home</a></li>
+                <li class="cabecalho__navegacao__lista__item"><a class="cabecalho__navegacao__lista__item__link"
+                        href="produtos.html">Produtos</a></li>
+                <li class="cabecalho__navegacao__lista__item"><a class="cabecalho__navegacao__lista__item__link"
+                        href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteudo">
+
+        <form class="conteudo__formulario" action="">
+            <label class="conteudo__formulario__label" for="nome-sobrenome">Nome e Sobrenome: </label>
+            <input class="conteudo__formulario__input" type="text" id="nome-sobrenome" required placeholder="Seu nome">
+
+            <label class="conteudo__formulario__label" for="email">E-mail: </label>
+            <input class="conteudo__formulario__input" type="email" id="email" required
+                placeholder="seu.email@dominio.com">
+
+            <label class="conteudo__formulario__label" for="telefone">Telefone: </label>
+            <input class="conteudo__formulario__input" type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
+
+            <label class="conteudo__formulario__label" for="mensagem">Mensagem: </label>
+            <textarea class="conteudo__formulario__textarea" cols="30" rows="10" id="mensagem" required></textarea>
+
+            <fieldset>
+                <p class="conteudo__formulario__paragrafo">Como prefere o nosso contato?</p>
+                <div class="conteudo__formulario__opcoescontato">
+                    <div class="conteudo__formulario__opcoescontato__box">
+                        <input type="radio" name="contato" id="radio__email" value="email" required>
+                        <label for="radio__email">E-mail</label>
+                    </div>
+                    <div class="conteudo__formulario__opcoescontato__box">
+                        <input type="radio" name="contato" id="radio__telefone" value="telefone">
+                        <label for="radio__telefone">Telefone</label>
+                    </div>
+                    <div class="conteudo__formulario__opcoescontato__box">
+                        <input type="radio" name="contato" id="radio__whatsapp" value="whatsapp" checked>
+                        <label for="radio__whatsapp">WhatsApp</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select name="horario" id="horario">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </fieldset>
+
+            <div class="conteudo__formulario__opcoescontato__checkbox">
+                <input type="checkbox" id="checkbox__newsletter">
+                <label for="checkbox__newsletter">Gostaria de receber nossas novidades por email?</label>
+            </div>
+
+            <input type="submit" value="Enviar formulário" class="conteudo__formulario__enviar">
+        </form>
+
+        <div class="tabela__horarios">
+            <table>
+                <thead>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h~20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="rodape">
+        <img src="logo-branco.png" alt="logo">
+        <p class="rodape__texto">&copy; Copyright Barbearia Alura - 2024</p>
+    </footer>
+</body>
+
+</html>

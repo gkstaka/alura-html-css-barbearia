@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.cabecalho {
+	background-color: #BBBBBB;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+}
+
+.cabecalho__navegacao {
+	position-anchor: top;
+}
+
+.cabecalho__navegacao__lista {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 50px;
+}
+
+.cabecalho__navegacao__lista__item {
+	list-style: none;
+	font-size: 2.5rem;
+}
+
+.cabecalho__navegacao__lista__item__link {
+	text-decoration: none;
+	color: black;
+}
+
+.cabecalho__navegacao__lista__item__link:hover {
+	color: #c78c19;
+	text-decoration: underline;
+}
+
+/* ------------------ */
+
+.banner {
+	width: 100%;
+}
+
+.principal {
+	box-sizing: border-box;
+	padding: 2% 15%;
+	justify-self: center;
+	background-color: #fefefe;
+
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.titulo__principal {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	clear: left;
+	/* text-shadow: 2px 2px 4px red; */
+}
+/* .titulo__principal::before{
+	content: "[";
+}
+
+.titulo__principal::after{
+	content: "]";
+} */
+
+
+
+.principal p {
+	margin: 0 0 1rem;
+	text-align: justify;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.beneficios{
+	background-color: #888888;
+	/* box-shadow: inset 0 0 30px red; */
+}
+
+.conteudo__beneficios{
+	width: 640px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.conteudo__beneficios__lista{
+	width:40%;
+}
+
+.itens{
+	line-height: 1.5rem;
+}
+
+.itens::before{
+	content: "★";
+}
+
+.itens:first-child{
+	font-weight: bold;
+}
+
+
+.imagem__beneficios {
+	width: 60%;
+	box-shadow: 10px 10px 5px 10px black;
+	/* opacity: 1; */
+	/* transition: opacity 0.4s; */
+}
+
+/* .imagem__beneficios:hover{
+	opacity: 0.3;
+} */
+
+.video {
+	margin: 2rem;
+	text-align: center;
+}
+
+/* p {
+	text-align: justify;
+} */
+
+.mapa {
+	text-align: center;
+	background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+	text-align: center;
+}
+
+.mapa__iframe {
+	padding: 3rem 0;
+}
+
+
+
+/* ------------------ */
+
+.rodape {
+	text-align: center;
+	background: url(bg.jpg);
+	padding: 40px 0;
+}
+
+.rodape__texto {
+	color: white;
+	margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+	.cabecalho, .principal, .conteudo__beneficios, .mapa__iframe, .video{
+		width:auto;
+	}
+	.cabecalho{
+		flex-direction: column;
+	}
+	.cabecalho__navegacao__lista{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.conteudo__beneficios{
+		flex-direction: column;
+		align-items: center;
+	}
+	.conteudo__beneficios__lista{
+		margin-bottom: 40px;
+	}
+	
+}

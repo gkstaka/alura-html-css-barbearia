@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+body{
+	font-family: "Montserrat", sans-serif;
+	
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    background-color: #BBBBBB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.cabecalho__navegacao {
+    position-anchor: top;
+}
+
+.cabecalho__navegacao__lista {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho__navegacao__lista__item {
+    list-style: none;
+    font-size: 2.5rem;
+}
+
+.cabecalho__navegacao__lista__item__link {
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho__navegacao__lista__item__link:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+/* ------------------ */
+
+.conteudo__lista {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.conteudo__lista__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    /* text-align: center; */
+    width: 20%;
+    padding: 50px 25px;
+    margin: 50px 0;
+    border: solid black 2px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.conteudo__lista__item:hover{
+    border-color: #c78c19;
+}
+
+.conteudo__lista__item:active{
+    border-color: #088c19;
+}
+
+
+.conteudo__lista__item__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.conteudo__lista__item:hover .conteudo__lista__item__titulo{
+    font-size: 2.25rem;
+}
+
+.conteudo__lista__item__descricao {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.conteudo__lista__item__preco {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ------------------ */
+
+.rodape{
+    text-align: center;
+    background: url(bg.jpg);
+    padding: 40px 0;
+}
+
+.rodape__texto{
+    color:white;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+	.cabecalho, .principal, .conteudo__beneficios, .mapa__iframe, .video{
+		width:auto;
+	}
+	.cabecalho{
+		flex-direction: column;
+	}
+	.cabecalho__navegacao__lista{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+    .conteudo__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo__lista__item{
+        width: 90%;
+    }
+}
